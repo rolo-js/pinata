@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-declare var jquery: any;
-declare var $: any;
+import { FullpageService } from './core/fullpage.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less'],
+  providers:[FullpageService]
 })
 export class AppComponent {
   title = 'app';
-  constructor() {
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        
-      });
-    });
+  constructor(private fullpageService:FullpageService) {
+
   }
 }
