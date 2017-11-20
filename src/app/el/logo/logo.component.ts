@@ -5,17 +5,21 @@ import { Component, OnInit, Input,ViewChild, ElementRef,AfterViewInit } from '@a
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.less']
 })
-export class LogoComponent implements OnInit,AfterViewInit {
+export class LogoComponent implements OnInit, AfterViewInit {
 
-  @Input() state : string;
+  private _state ='';
+  
+  @Input()
+  isGreen: boolean = false;
+
   @ViewChild('logosvg') mySvg: ElementRef;
+
   constructor() { 
-    
   }
 
   ngOnInit() {
-    
   }
+
   ngAfterViewInit(){
     
   }

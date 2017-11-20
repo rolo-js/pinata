@@ -1,7 +1,16 @@
 #logosvg {
-    path {
+    path,circle {
         fill:#FFFFFF;
+        transition: all ease-in-out 0.3s;
     }
-    fill:#FFFFFF;
-    height:50px
+    //fill:#FFFFFF;
+    height:50px;
+    &.green {
+        //fill:#00ff00;
+        path,circle {
+            fill:#00ff00;
+        }
+    }
 }
+
+
