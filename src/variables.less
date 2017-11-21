@@ -2,3 +2,43 @@
 
 @gradient-green : #a5cd14;
 @gradient-blue : #00b496;
+
+/*
+  LOGO
+*/
+@logo-green: #95d600;
+@logo-white: #FFFFFF;
+
+/* MENU */
+@menu-gray : #969696;
+
+
+/* CONTAINER */
+.container {
+
+    @media (max-width: 599px) {  
+        
+        padding: 0 20px;    
+    }
+    @media (min-width: 600px) and (max-width: 899px){ 
+        
+        padding: 0 20px;    
+     }
+    @media (min-width: 900px) and (max-width: 1199px){  
+        width: 900px;
+        margin:auto;
+    }
+    // @media (min-width: 900px) and (max-width: 1199px){  }
+    @media (min-width: 1200px){  
+        width: 1160px;
+        margin:auto;
+    }
+}
+
+
+@font-face {
+    font-family: SansationLight;
+    src: url('assets/Sansation_Light_0.ttf');
+}
+
+

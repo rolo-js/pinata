@@ -1,14 +1,19 @@
+@import "../../../variables.less";
+
+:host {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
 #logosvg {
+    height:50px;
     path,circle {
-        fill:#FFFFFF;
+        fill: @logo-white;
         transition: all ease-in-out 0.3s;
     }
-    //fill:#FFFFFF;
-    height:50px;
     &.green {
-        //fill:#00ff00;
         path,circle {
-            fill:#00ff00;
+            fill: @logo-green;
         }
     }
 }
